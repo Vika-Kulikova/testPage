@@ -1,0 +1,331 @@
+@charset "utf-8";
+
+/*--------------------------------------------------------------------------------------------------
+CSS Styles for <Project Name>.
+
+version:   1.0
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Typography
+--------------------------------------------------------------------------------------------------*/
+
+/* Setting up the fonts */
+body {
+	background: #333 url(../img/bg.png) repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #333;
+	min-width: 1004px;
+}
+input, button, select, textarea {font-family: Arial, Helvetica, sans-serif;}
+
+/* End Typography
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Main
+--------------------------------------------------------------------------------------------------*/
+ #content:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+.main {
+	background: url(../img/bg-gradient.png) repeat-x 0 397px;
+}
+.wrapper {
+	background: url(../img/bg-img.jpg) no-repeat 50% 0;
+	min-height: 700px;
+}
+.w-01 {
+	min-width: 1004px;
+	max-width: 1004px;
+	margin: 0 auto;
+	padding: 45px 0 0;
+}
+/* Main
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Header
+--------------------------------------------------------------------------------------------------*/
+#header {
+	min-height: 75px;
+	margin: 0 0 16px;
+	padding: 21px 0 0 19px;
+}
+#header, #content, #footer {
+	border: 1px solid #616161;
+	background: url(../img/bg-content.png) repeat;
+}
+.logo {
+	margin: 3px 0 0;
+	display: block;
+	background: url(../img/logo.png) no-repeat;
+	width: 215px;
+	height: 47px;
+	text-indent: -9999px;
+}
+#header .tel {
+	float: right;
+	padding: 1px 19px 0 23px;
+	font-size: 14px;
+	color: #0f0f0f;
+	background: url(../img/ico-tel.png) no-repeat 0 0;
+	min-height: 17px;
+}
+#header .tel a {
+	color: #0f0f0f;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+}
+/* End Header
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Headings
+--------------------------------------------------------------------------------------------------*/
+
+/* End Headings
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Links
+--------------------------------------------------------------------------------------------------*/
+
+/* End Links
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Branding
+--------------------------------------------------------------------------------------------------*/
+
+/* End Branding
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Main Nav
+--------------------------------------------------------------------------------------------------*/
+
+/* End Main Nav
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Sub Nav
+--------------------------------------------------------------------------------------------------*/
+
+/* End Sub Nav
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Main Content
+--------------------------------------------------------------------------------------------------*/
+ #content {
+	margin: 0 0 16px;
+	padding: 0 19px 24px;
+}
+.col-left, .col-center {
+	float: left;
+}
+.col-left {
+	width: 200px;
+	padding: 24px 20px 0 0;
+}
+.col-center {
+	width: 743px;
+	padding: 15px 0 0 0;
+}
+.col-center h1 {
+	color: #040933;
+	font-family: Georgia, Times new Roman;
+	font-size: 18px; 
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 0 0 8px;
+}
+.col-center p {
+	font-size: 13px;
+	line-height: 19px;
+	color: #333;
+	padding: 0 0 7px;
+	text-align: justify;
+}
+.col-center .img {
+	border: 1px solid #434343;
+	-webkit-box-shadow: 0 0 100px 0 rgba(0,0,0,0.25);
+	box-shadow: 0 0 100px 0 rgba(0,0,0,0.25);
+}
+.col-center .left {
+	float: left;
+	margin: 6px 25px 10px 0;
+}
+.col-center .right {
+	float: right;
+	margin: 6px 0 10px 25px;
+}
+.col-left .block {
+	font-family: Georgia, Times new Roman;
+	font-size: 14px;
+	background: #040933;
+	min-height: 100px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 10px 0 rgba(25,24,15,0.25);
+	box-shadow: 0 0 10px 0 rgba(25,24,15,0.25);
+}
+.col-left .block .title {
+	color: #efe12d;
+	text-transform: uppercase;
+	text-align: center;
+	border-bottom: 1px dotted #f1ec5f;
+	padding: 12px 0 10px 0;
+}
+/* sidebar nav */
+.col-left nav ul li {
+	text-transform: uppercase;
+	border-bottom: 1px solid #dfdfdf;
+	position: relative;
+}
+.col-left nav ul li:last-child {
+	border-bottom: none;
+}
+.col-left nav ul li:last-child a {
+	-webkit-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+}
+.col-left nav ul li a {
+	color: #e4e4e4;
+	text-decoration: none;
+	padding: 22px 10px 24px 35px;
+	display: block;
+	background: url(../img/arrow.png) no-repeat 15px 22px;
+}
+.col-left nav ul li a:hover,  .col-left nav ul li.active a{
+	background: #434343 url(../img/arrow.png) no-repeat 15px -104px;
+}
+/* second level */
+.col-left nav ul ul {
+	position: absolute;
+	top: -1px;
+	left: 199px;
+	width: 221px;
+	border: 1px solid #dfdfdf;
+	display: none;
+}
+.col-left nav ul li:hover ul {
+	display: block;
+}
+.col-left nav ul li ul li {
+	text-transform: none;
+}
+.col-left nav ul li ul li a, .col-left nav ul li.active ul li a {
+	background: #434343;
+	padding: 12px 10px 10px 15px;
+	color: #e3e3e3;
+	font-size: 13px; 
+	font-family: Arial, Hevlvetica, sans-serif;
+}
+.col-left nav ul li ul li:last-child a {
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+.col-left nav ul li ul li a:hover, .col-left nav ul ul li.active a {
+	background: #f1ec5f;
+	color: #040933;
+}
+
+/* =End Main Content
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Secondary Content
+--------------------------------------------------------------------------------------------------*/
+
+/* End Secondary Content
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Footer
+--------------------------------------------------------------------------------------------------*/
+
+#footer {
+	min-height: 41px;
+	padding: 31px 18px 0 19px;
+	color: #434343;
+	font-size: 12px;
+}
+#footer .menu {
+	float: right;
+}
+#footer .menu li {
+	float: left;
+	padding: 0 0 0 11px;
+	font-size: 12px;
+}
+#footer .menu li:before {
+	width: 1px;
+	height: 12px;
+	background: #000;
+	content: '';
+	float: left;
+	margin: 0 11px 0 0;
+}
+#footer .menu li:first-child:before {
+	display: none;
+}
+#footer .menu li a {
+	color: #040933;
+	text-decoration: none;
+}
+#footer .menu li a:hover {
+	text-decoration: underline;
+}
+
+/* End Footer
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Forms
+--------------------------------------------------------------------------------------------------*/
+
+/* Removing fieldset borders (remove if you want to keep the defaults defined in Normalization) */
+fieldset { border: 1px solid transparent; margin: 0; padding: 0; }
+
+/* End Forms
+--------------------------------------------------------------------------------------------------*/
+
+/* =Tables
+--------------------------------------------------------------------------------------------------*/
+
+/* End Tables
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Misc 1
+--------------------------------------------------------------------------------------------------*/
+
+/* End Misc 1
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Misc 2
+--------------------------------------------------------------------------------------------------*/
+
+/* End Misc 2
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Additional 1
+--------------------------------------------------------------------------------------------------*/
+
+/* End Additional 1
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Additional 2
+--------------------------------------------------------------------------------------------------*/
+
+/* End Additional 2
+--------------------------------------------------------------------------------------------------*/
